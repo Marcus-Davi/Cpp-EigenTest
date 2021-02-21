@@ -38,7 +38,8 @@ struct Functor
 struct Model : Functor<double>
 {
 
-    Model(const VectorXd &input_data, const VectorXd &output_data) : Functor<double>(input_data.size())
+    // Constructor that takes all the fit data
+    Model(const VectorXd &input_data, const VectorXd &output_data) : Functor<double>(output_data.size())
     {
 
         model_input = input_data;
