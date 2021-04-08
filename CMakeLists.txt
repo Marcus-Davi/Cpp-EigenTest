@@ -22,6 +22,7 @@ find_package(Python3 COMPONENTS Development NumPy)
 add_executable(main src/main.cpp)
 add_executable(lm-test src/lm-test.cpp)
 add_executable(numerical_diff src/numerical_diff.cpp)
+add_executable(sparse src/sparse_test.cpp)
 
 # for plots
 target_include_directories(lm-test PRIVATE ${Python3_INCLUDE_DIRS} ${Python3_NumPy_INCLUDE_DIRS})
